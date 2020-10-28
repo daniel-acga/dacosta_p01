@@ -1,0 +1,2 @@
+La proteína Spike de los coronavirus es una proteína de superficie multifuncional que regula la interacción con los receptores  de la membrana del hosperdero.
+Esta contiene dos dominios, el S1 asociado con el reconocimiento y el S2 que regula la fusión de la membrana viral con la de la célula a la que infecta.
