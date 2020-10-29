@@ -179,14 +179,14 @@ ln -s ../data/raw_data/sarscov2-genome.gff3
 **Respuesta 2:**
 
 cat sarscov2_genome.gff3 | grep -v &quot;^#&quot; | cut -f 3 | sort | uniq -c >> barplotdata.txt
-      1 
-     13 CDS
-      1 five_prime_UTR
-     11 gene
-     27 mature_protein_region_of_CDS
-      1 region
-      5 stem_loop
-      1 three_prime_UTR
+      
+13 CDS
+1 five_prime_UTR
+11 gene
+27 mature_protein_region_of_CDS
+1 region
+5 stem_loop
+1 three_prime_UTR
 
-8 categorías
+7 categorías
 
