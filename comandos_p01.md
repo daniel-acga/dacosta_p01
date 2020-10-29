@@ -177,14 +177,16 @@ cd ../../figures/
 ln -s ../data/raw_data/sarscov2-genome.gff3
 
 **Respuesta 2:**
- 
-  594  awk '$3=="CDS"' sarscov2_genome.gff3 | wc -l > barplotdata.txt
-  595  awk '$3=="gene"' sarscov2_genome.gff3 | wc -l > barplotdata.txt
-  596  awk '$3=="CDS"' sarscov2_genome.gff3 | wc -l >> barplotdata.txt
-  599  awk '$3=="three_prime_UTR"' sarscov2_genome.gff3 | wc -l >> barplotdata.txt
-  600  awk '$3=="five_prime_UTR"' sarscov2_genome.gff3 | wc -l >> barplotdata.txt 
-  602  awk '$3=="stem_loop"' sarscov2_genome.gff3 | wc -l >> barplotdata.txt
-  603  awk '$3=="mature_protein_region_of_CDS"' sarscov2_genome.gff3 | wc -l >> barplotdata.txt
 
-7 categorías
+cat sarscov2_genome.gff3 | grep -v &quot;^#&quot; | cut -f 3 | sort | uniq -c >> barplotdata.txt
+      1 
+     13 CDS
+      1 five_prime_UTR
+     11 gene
+     27 mature_protein_region_of_CDS
+      1 region
+      5 stem_loop
+      1 three_prime_UTR
+
+8 categorías
 
